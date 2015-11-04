@@ -1,0 +1,685 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family:"Microsoft YaHei",sans-serif;
+  font-size:14px;
+  background-color:#ffffff;
+  color:#fff;
+  overflow: hidden; 
+  zoom: 1;
+}
+ul,
+li{
+  list-style:none;
+  margin:0;
+  padding:0
+}
+img{
+  border:0
+}
+a:link,
+a:visited{
+  text-decoration: none;
+  color:#fff;
+}
+.fp-section { 
+  overflow: hidden;
+}
+.row {
+  display: block;
+  width: 100%;
+}
+.row:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.column-4 {
+    width: 33.33333333%;
+    float: left;
+}
+.text-center {
+  text-align: center;
+}
+
+/* 头部导航 */
+.nav {
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+  position: fixed;
+  _position: absolute;
+  z-index: 99;
+  top: 0;
+  _top: expression(eval(document.documentElement.scrollTop));
+  left: 0;
+}
+.wrap-bg,
+.logo,
+.nav ul {
+  position: absolute;
+}
+.wrap-bg {
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ffffff; 
+  background: rgba(255,255,255,0.78);
+	z-index: 100
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 101;
+}
+.logo {
+  left: 0;
+  top: 10px;
+}
+.nav ul {
+  overflow: hidden;
+  right: 0;
+  top: 7px;
+}
+.nav li {
+  width: 8em;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+}
+.nav li a {
+	color: #333333;
+}
+.nav li a:link, 
+.nav li a:visited {
+  display: block;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 7px;
+  font-size: 16px;
+}
+.nav li a:hover,
+.nav li a.current {
+  background-color:#ff7788;
+  border-radius:35px;
+  color: #ffffff;
+}
+.nav.blue li a:hover,
+.nav.blue li a.current {
+	background-color:#31c7ca;
+	border-radius:35px;
+	color: #ffffff;
+}
+
+/* 底部 */
+.booter {
+  text-align: center;
+}
+.booter h1 {
+  font-size: 35px;
+  color: #333333;
+  margin-top: 10%;
+  font-weight: normal;
+}
+.download-content {
+  width: 900px;
+  height: 310px;
+  margin: 0 auto;
+  border: solid 1px #eeeeee;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.download-content:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+.download-content .d-box {
+  width: 33%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  border-left: solid 1px #eeeeee;
+}
+.download-content .d-box:first-child {
+  border-left: 0;
+}
+.download-content .d-box img {
+  margin-top: 50px;
+}
+.download-content .d-box p {
+  color: #7d7d7d;
+  line-height: 50px;
+  font-size: 18px;
+}
+.download-content .d-box a {
+  display: block;
+  width: 190px;
+  height: 42px;
+  line-height: 42px;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #ff7788;
+  margin: 0 auto;
+}
+.download-content.blue .d-box a {
+  background-color: #21c3c5;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 25px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+.footer ul li,
+.footer ul li a {
+  color: #333333;
+}
+.footer ul li {
+  display: inline-block;
+  font-size: 12px;
+}
+.footer ul li:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 1px;
+  height: 13px;
+  background-color: #797979;
+  margin: 2px 10px;
+}
+.footer ul li:first-child:before {
+  display: none;
+}
+
+/* 右侧导航 */
+#fp-nav {
+  background-color: #ffb6c0;
+  border-radius: 15px;
+}
+#fp-nav ul li, 
+.fp-slidesNav ul li {
+  margin: 10px;
+}
+#fp-nav li .active {
+  background: url(../images/right_bar_bg.png) no-repeat;
+  width: 62px;
+  height: 32px;
+  left: -43px;
+  top: -8px;
+}
+#fp-nav li .active span, 
+.fp-slidesNav .active span {
+  background-color: #ff7788;
+  left: auto;
+  right: 6px;
+  top: 17px;
+}
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+  background-color: #ffd2d7;
+  border: 0;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0px 0px -5px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+#fp-nav li a b {
+  font-weight: normal;
+  line-height: 32px;
+  padding-left: .8em;
+  display: none;
+}
+#fp-nav li .active b {
+  display: block;
+}
+
+/* 内容区 */
+.section-p1,
+.section-p2,
+.section-p3,
+.section-p4,
+.section-p5,
+.section-p6 {
+  background: #ffffff;
+}
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.w960 {
+  width: 960px;
+}
+.phone,
+.download,
+.icon-content,
+.explian,
+.person-shadow {
+  position: absolute;
+  text-align: center;
+}
+.down {
+  margin-top: 55px;
+}
+.down-left {
+  float: left;
+}
+.down-left a {
+  display: block;
+  border: solid 3px #ff6688;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 14px 38px;
+  text-align: left;
+}
+.down-left span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ff6688;
+    font-size: 14px;
+    text-align: left;
+}
+.down-left a .phone-icon {
+    width: 33px;
+    height: 38px;
+    margin-right: 15px;
+    background: url(../images/phone_logo.png) no-repeat;
+}
+.down-left a:hover {
+  background-color: #faeee5;
+}
+.down-left-white a:hover {
+  background-color: #17b6bf;
+}
+.down-left a.btn-apple .phone-icon {
+    background-position: 0 0;
+}
+.down-left a.btn-android .phone-icon {
+    background-position: -35px 0;
+}
+.down-left-white a {
+  border: solid 3px #ffffff;
+}
+.down-left-white span {
+  color: #ffffff;
+}
+.down-left-white a.btn-apple .phone-icon {
+    background-position: 0 -40px;
+}
+.down-left-white a.btn-android .phone-icon {
+    background-position: -35px -40px;
+}
+.down-right {
+  float: right;
+}
+.down-left img:last-child {
+  margin-top: 15px;
+}
+.down-right p {
+  line-height: 0px;
+  color: #333333;
+  margin-top: 13px;
+}
+.exp p {
+  color: #888888;
+  font-size: 20px;
+  line-height: 38px;
+}
+.white h1,
+.white .exp p {
+  color: #ffffff;
+}
+.explian h1 {
+  font-weight: normal;
+  font-size: 50px;
+}
+.explian.right {
+  right: 10px;
+  top: 115px;
+}
+.explian.left {
+  left: 40px;
+  top: 115px;
+} 
+.text-content p {
+  color: #666666;
+}
+.button {
+  display: inline-block;
+  padding: .5em 1em;
+}
+
+/* 动画区 */
+.top-logo,
+.about-title,
+.about-content p,
+.touch-content p,
+.title-angel,
+.title-exp,
+.down-load,
+.i-title,
+.person-logo,
+.person-down,
+.person-phone,
+.icon-content .icon-box,
+.phone img,
+.explian h1,
+.explian .exp,
+.booter h1,
+.download-content,
+.doctor-logo,
+.doctor-down,
+.doctor-phone,
+.doc-box .doc-icon,
+.doc-box p,
+.person-shadow {
+  opacity: 0;
+}
+
+/* 首页 */
+.i-title {
+  position: absolute;
+  top: 34px;
+  left: 0;
+  width: 14%;
+}
+.title-angel {
+  margin-top: 13%;
+  width: 52%;
+}
+.title-exp,
+.down-load {
+  margin-top: 3.6%;
+}
+.title-exp {
+  width: 29%;
+  margin-top: 3%;
+}
+.down-load .button {
+  border: solid 2px #ff7788;
+  border-radius: 40px;
+  padding: 5px 38px 4px 38px;
+  margin-left: 10px;
+}
+.down-load .button:first-child {
+  margin-right: 10px;
+}
+.down-load .button:last-child {
+  margin-left: 10px;
+}
+.down-load .button.blue {
+  border: solid 2px #21c3c5;
+}
+.down-load .button span {
+  float: left;
+  color: #ff7788;
+  font-size: 27px;
+}
+.down-load .button.blue span {
+  color: #21c3c5;
+}
+.down-load .button span.icon-down {
+  width: 40px;
+  height: 40px;
+  background: url(../images/spride01.png) no-repeat;
+  background-size: 100%;
+}
+.down-load .button span.icon-doctor {
+  background: url(../images/spride02.png) no-repeat;
+  background-size: 100%;
+}
+
+/* 个人版 */
+.personal .section-p3 {
+  background-color: #ffabb6;
+}
+.personal .section-p5 {
+  background-color: #fac973;
+}
+.personal .section-p1 {
+  background: url(../images/personal_top.jpg) no-repeat;
+  background-size: cover;
+}
+.personal .section-p1 .phone {
+  right: 0;
+  bottom: -4px;
+}
+.personal .section-p1 .download {
+  width: 416px;
+  height: 284px;
+  top: 205px;
+  left: 80px;
+}
+.icon-content {
+  position: absolute;
+  width: 330px;
+  left: 100px;
+  top: 140px;
+  z-index: 91;
+}
+.icon-content .icon-box {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #f00;
+  float: left; 
+  margin-left: 30px;
+  margin-bottom: 28px;
+  background: url(../images/person_icon.png) no-repeat;
+}
+.phone2 {
+  top: 275px;
+  left: 0;
+  z-index: 90;
+}
+.phone3 {
+  top: 280px;
+  right: 30px;
+  z-index: 100;
+}
+.phone4 {
+  top: 250px;
+  left: 0;
+}
+.phone5 {
+  top: 260px;
+  right: 0;
+  z-index: 99;
+}
+.person-shadow {
+  top: 120px;
+  left: 130px;
+  z-index: 91;
+}
+.book {
+  top: 90px;
+  right: 60px;
+  z-index: 99;
+}
+.girl {
+  top: 160px;
+  left: 115px;
+}
+.balloon {
+  top: 112px;
+  right: 172px;
+  z-index: 100;
+}
+.explian {
+  width: 410px;
+  text-align: left;
+  color: #333333;
+}
+.personal .section-p3 .explian {
+  top: 158px;
+}
+.personal .section-p5 .explian {
+  top: 130px;
+}
+.icon-content .icon-box-1 {
+  background-position: 0 0;
+}
+.icon-content .icon-box-2 {
+  background-position: -107px 0px;
+}
+.icon-content .icon-box-3 {
+  background-position: -214px 0;
+}
+.icon-content .icon-box-4 {
+  background-position: 0 -103px;
+}
+.icon-content .icon-box-5 {
+  background-position: -107px -103px;
+}
+.icon-content .icon-box-6 {
+  background-position: -214px -103px;
+}
+
+/* 医生版 */
+.doctor .section-p1 {
+  background: url(../images/doctor_top.jpg) no-repeat;
+  background-size: cover;
+}
+.doctor .section-p1 .phone {
+  left: 32px;
+  bottom: -4px;
+}
+.doctor .section-p1 .download {
+  width: 416px;
+  height: 284px;
+  top: 33%;
+  right: 10%;
+}
+.doctor .down-right p {
+    color: #ffffff;
+}
+.doc-service {
+  margin-top: 16%;
+}
+.doc-service .column-4 {
+  margin-bottom: 70px;
+}
+.doc-box .doc-icon {
+  display: inline-block;
+  width: 74px;
+  height: 72px;
+  margin: 0 auto;
+  background: url(../images/doctor_icon.png) no-repeat;
+}
+.doc-box .doc-icon-1 {
+  background-position: 0 0;
+}
+.doc-box .doc-icon-2 {
+  background-position: -75px 0;
+}
+.doc-box .doc-icon-3 {
+  background-position: -154px 0;
+}
+.doc-box .doc-icon-4 {
+  background-position: 0 -76px;
+}
+.doc-box .doc-icon-5 {
+  background-position: -75px -76px;
+}
+.doc-box .doc-icon-6 {
+  background-position: -154px -76px;
+}
+.doc-box p {
+  color: #666666;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+}
+.doc-box p.p1 {
+  margin-top: 22px;
+}
+.doc-box p.p2 {
+  color: #999999;
+  font-size: 14px;
+}
+
+/* 关于我们 */
+.aboutus .section-p3 {
+  background-color: #f5f5f5;
+}
+.aboutus .section-p1 {
+  background: url(../images/about_top.jpg) no-repeat;
+  background-size: cover;
+}
+.top-logo {
+  margin-top: 28%;
+  width: 32%;
+}
+.about-title {
+  margin-top: 12%;
+}
+.about-content,
+.touch-content {
+  font-size: 16px;
+  text-align: left;
+}
+.about-content p,
+.touch-content p {
+  padding: 0 20px;
+  line-height: 40px;
+  margin-top: 5%;
+}
+.touch-content p {
+  color: #333333;
+  font-weight: bold;
+}
+
+/* 适配 */
+@media screen and (max-width: 1000px){ 
+  .main-img {
+    width: 100%;
+  }
+  .i-title {
+    position: relative;
+  }
+} 
+@media screen and (min-height: 960px){ 
+  .main {
+    margin-top: 10%;
+  }
+  .section-p1 .phone {
+    bottom: 143px;
+  }
+  .person-phone,
+  .doctor-phone { 
+    width:125%;
+  }
+  .title-angel {
+    margin-top: 24%;
+    width: 75%;
+  }
+  .title-exp {
+    width: 37%;
+  }
+  .doc-service {
+    margin-top: 28%;
+  }
+  .booter {
+    padding-top: 10%;
+  }
+  .top-logo {
+      margin-top: 42%;
+  }
+} 
