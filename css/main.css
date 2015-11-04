@@ -233,6 +233,10 @@ a:visited{
   width: 10px;
   height: 10px;
   margin: -5px 0px 0px -5px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 #fp-nav li a b {
   font-weight: normal;
