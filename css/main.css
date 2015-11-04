@@ -439,6 +439,7 @@ a:visited{
   height: 40px;
   background: url(../images/spride01.png) no-repeat;
   background-size: 100%;
+  margin-right: 12px;
 }
 .down-load .button span.icon-doctor {
   background: url(../images/spride02.png) no-repeat;
