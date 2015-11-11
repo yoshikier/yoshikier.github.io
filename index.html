@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>首页</title>
+    <link href="css/fullpage.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="main text-center main-img">
+        <img class="i-title" src="images/logo.png" width="40%">
+        <div>
+          <img class="title-angel" src="images/index_title_01.png">
+        </div>
+        <div>
+          <img class="title-exp" src="images/index_title_02.png">
+        </div>
+        <div class="down-load">
+          <a class="button" href="personal.html">
+            <span class="icon-down icon-person"></span>
+            <span>个人版</span>
+          </a>
+          <a class="button blue" href="doctor.html">
+            <span class="icon-down icon-doctor"></span>
+            <span>医生版</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer">
+          <ul>
+            <li><a href="http://haoyunbang.cn/keystone/signin" target="_blank">医生登录</a></li>
+            <li><a href="personal.html">个人版</a></li>  
+            <li><a href="doctor.html">医生版</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="about.html#page3">联系我们</a></li> 
+            <li><a href="http://weibo.com/haoyunbang" target="_blank">官方微博</a></li> 
+            <li><a href="#">官方微信</a></li> 
+            <li>©haoyunbang  京ICP备 14053281号-1  京公网安备 2163483  明锐思成  版权所有</li>
+          </ul>
+        </div>
+    </div>    
+    <div class="ie-container">
+      <h1>Hi，你的浏览器版本过低</h1>
+      <p>为了能够正常体验好孕帮网站功能<br/>我们建议你升级最新版IE浏览器 (IE8+) 或尝试一下其他浏览器</p>
+      <span>
+      	<a href="http://www.firefox.com.cn/" target="_blank"><img src="images/logo_firefox.jpg"/></a>
+        <a href="http://www.google.cn/chrome/browser/desktop/index.html" target="_blank"><img src="images/logo_chrome.jpg"/></a>
+      </span>
+    </div>
+    
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/jquery.backstretch.min.js" ></script>
+    <script src="js/velocity.min.js" ></script>
+    <script src="js/velocity.ui.min.js" ></script>
+    <script src="js/functions.js" ></script>   
+    <script>
+    
+      //判断ie6和ie7
+      var isIE = !!window.ActiveXObject;  
+      var isIE6 = isIE && !window.XMLHttpRequest;  
+      var isIE8 = isIE && !!document.documentMode;  
+      var isIE7 = isIE && !isIE6 && !isIE8; 
+      if (isIE6 || isIE7) {
+        $(".ie-container").show();
+        $(".container").hide();
+      };
+    </script>
+  </body>
+</html>
+
+
