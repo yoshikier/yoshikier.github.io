@@ -1,0 +1,898 @@
+@charset "UTF-8";
+/* line 3, ../sass/layer.scss */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 18, ../sass/layer.scss */
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, "微软雅黑";
+}
+
+/* line 25, ../sass/layer.scss */
+html {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 31, ../sass/layer.scss */
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+
+/* line 40, ../sass/layer.scss */
+#wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #8a1602;
+  font-size: 11px;
+  z-index: 100;
+  text-align: center;
+  line-height: 100%;
+}
+
+/* line 52, ../sass/layer.scss */
+#loader {
+  position: fixed;
+  background: #fff url("../images/loading_bg.png") no-repeat -1000px -1000px;
+  background-size: 100% auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: 10001;
+}
+
+/* line 64, ../sass/layer.scss */
+#loader > span {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #000;
+  border: 2px solid #000;
+  box-shadow: 1px 1px 0px #fff inset, -1px -1px 0px #fff inset;
+  -webkit-transform-origin: center center;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* line 78, ../sass/layer.scss */
+#loader > span > span {
+  width: 100%;
+  height: 100%;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  -webkit-transform: rotate(-45deg);
+}
+
+/* line 89, ../sass/layer.scss */
+#loader > div {
+  position: fixed;
+  width: 114px;
+  height: 97px;
+  display: block;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* line 99, ../sass/layer.scss */
+#loader > div > section {
+  width: 114px;
+  height: 97px;
+  position: relative;
+  display: block;
+  margin: auto;
+  clear: both;
+  -webkit-animation: scale-yyy 1500ms linear 0s infinite;
+  -webkit-transform-origin: center bottom;
+}
+
+/* line 110, ../sass/layer.scss */
+#loader > div:nth-child(1) {
+  -webkit-transform: translate(-100%, -175%);
+}
+
+/* line 114, ../sass/layer.scss */
+#loader > div:nth-child(2) {
+  -webkit-transform: translate(-100%, -25%);
+}
+
+/* line 118, ../sass/layer.scss */
+#loader > div:nth-child(3) {
+  -webkit-transform: translate(-100%, -150%);
+}
+
+/* line 122, ../sass/layer.scss */
+#loader > div:nth-child(4) {
+  -webkit-transform: translate(-100%, -50%);
+}
+
+/* line 126, ../sass/layer.scss */
+#loader > div:nth-child(3) > section,
+#loader > div:nth-child(4) > section {
+  width: 114px;
+  height: 97px;
+  position: relative;
+  display: block;
+  margin: auto;
+  clear: both;
+  -webkit-animation: scale-yy 1500ms linear 0s infinite;
+  -webkit-transform-origin: right bottom;
+}
+
+/* line 138, ../sass/layer.scss */
+#loader > div > section > article {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: url("../images/loading_bg.png") no-repeat;
+  background-size: 100% 100%;
+  -webkit-transform-origin: right bottom;
+}
+
+/* line 148, ../sass/layer.scss */
+#loader > div > section > article:nth-child(1) {
+  -webkit-box-reflect: right;
+}
+
+/* line 152, ../sass/layer.scss */
+#loader > div > section > article:nth-child(2) {
+  -webkit-transform: rotate(180deg);
+  -webkit-box-reflect: right;
+}
+
+/* line 157, ../sass/layer.scss */
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  -webkit-transform-origin: 0 0;
+}
+
+/* line 165, ../sass/layer.scss */
+.layer > .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-transform-origin: 0 0;
+}
+
+/* line 173, ../sass/layer.scss */
+.layer > .container * {
+  position: absolute;
+  display: block;
+}
+
+/* line 178, ../sass/layer.scss */
+.round {
+  -webkit-animation: round 2000ms linear 0s infinite;
+}
+
+/* line 182, ../sass/layer.scss */
+.round1 {
+  -webkit-animation: round 3600ms linear 0s infinite;
+}
+
+/* line 186, ../sass/layer.scss */
+.round2 {
+  -webkit-animation: round2 3600ms linear 0s infinite;
+}
+
+/* line 190, ../sass/layer.scss */
+.ctrl-round.active {
+  -webkit-animation: round 2000ms linear 0s infinite;
+}
+
+/* line 194, ../sass/layer.scss */
+.ctrl-round1.active {
+  -webkit-animation: round 3600ms linear 0s infinite;
+}
+
+/* line 198, ../sass/layer.scss */
+.ctrl-round2.active {
+  -webkit-animation: round2 3600ms linear 0s infinite;
+}
+
+/* line 202, ../sass/layer.scss */
+.arrow-repeat {
+  -webkit-animation: arrow-repeat 1500ms linear 0s infinite;
+}
+
+/* line 206, ../sass/layer.scss */
+.scale-repeat {
+  -webkit-animation: scale-yyy 1800ms linear 0s infinite;
+}
+
+/* line 210, ../sass/layer.scss */
+.invisible {
+  opacity: 0;
+  display: none;
+  -webkit-transform: translate(-1000px, -1000px) !important;
+}
+
+/* line 216, ../sass/layer.scss */
+.repeat-lb {
+  -webkit-animation: repeat-lb 1800ms linear 0s infinite;
+  -webkit-transform-origin: left bottom;
+}
+
+/* line 221, ../sass/layer.scss */
+.repeat-rb {
+  -webkit-animation: repeat-rb 1800ms linear 0s infinite;
+  -webkit-transform-origin: right bottom;
+}
+
+/* line 226, ../sass/layer.scss */
+.repeat-tc {
+  -webkit-animation: repeat-tc 1800ms linear 0s infinite;
+  -webkit-transform-origin: top center;
+}
+
+/* line 231, ../sass/layer.scss */
+.repeat-x {
+  -webkit-animation: repeat-x 800ms linear 0s infinite;
+}
+
+/* line 235, ../sass/layer.scss */
+.drop-down {
+  -webkit-transform: translateY(508px);
+  opacity: 0;
+  -webkit-transition-duration: 1800ms;
+  -webkit-animation-duration: 1800ms;
+}
+
+/* line 242, ../sass/layer.scss */
+.flash-appear {
+  opacity: 0;
+}
+
+/* line 246, ../sass/layer.scss */
+.flash-appear:nth-child(17) {
+  -webkit-animation: appear 800ms step-start 300ms 1 forwards;
+}
+
+/* line 250, ../sass/layer.scss */
+.flash-appear:nth-child(18) {
+  -webkit-animation: appear 800ms step-start 600ms 1 forwards;
+}
+
+/* line 254, ../sass/layer.scss */
+.flash-appear:nth-child(19) {
+  -webkit-animation: appear 800ms step-start 900ms 1 forwards;
+}
+
+/* line 258, ../sass/layer.scss */
+.flash-appear:nth-child(20) {
+  -webkit-animation: appear 800ms step-start 1200ms 1 forwards;
+}
+
+/* line 262, ../sass/layer.scss */
+.flash-appear:nth-child(21) {
+  -webkit-animation: appear 800ms step-start 1500ms 1 forwards;
+}
+
+/* line 266, ../sass/layer.scss */
+.flash-appear:nth-child(22) {
+  -webkit-animation: appear 800ms step-start 1800ms 1 forwards;
+}
+
+/* line 270, ../sass/layer.scss */
+.flash-appear:nth-child(23) {
+  -webkit-animation: appear 800ms step-start 2100ms 1 forwards;
+}
+
+/* line 274, ../sass/layer.scss */
+.flash-appear:nth-child(24) {
+  -webkit-animation: appear 800ms step-start 2400ms 1 forwards;
+}
+
+/* line 278, ../sass/layer.scss */
+.flash-appear:nth-child(25) {
+  -webkit-animation: appear 800ms step-start 2700ms 1 forwards;
+}
+
+/* line 282, ../sass/layer.scss */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #fc9;
+  z-index: 8888888;
+}
+
+/* line 292, ../sass/layer.scss */
+header > img {
+  margin: auto;
+  display: block;
+  -webkit-transform: translateY(18px);
+}
+
+/* line 298, ../sass/layer.scss */
+#frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 20000001;
+  color: #fff;
+  -webkit-transform: translate(-1000px, -1000px);
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+/* line 314, ../sass/layer.scss */
+#frame.active {
+  -webkit-transform: translate(0, 0);
+}
+
+/* line 318, ../sass/layer.scss */
+#frame.active > div > span:nth-child(3) {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* line 324, ../sass/layer.scss */
+#frame.active > div {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+
+/* line 339, ../sass/layer.scss */
+#frame.active > div > img.p1_gif {
+  top: 4.4%;
+  bottom: auto;
+  width: auto;
+  height: 52%;
+}
+
+/* line 347, ../sass/layer.scss */
+#frame.active .close {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) center no-repeat;
+  background-size: 100% auto;
+}
+/* line 356, ../sass/layer.scss */
+#frame.active .back {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 60px;
+  height: 26px;
+  background: url(../images/back.png) center no-repeat;
+  background-size: 100% auto;
+}
+
+/* line 367, ../sass/layer.scss */
+.pop1 {
+  -webkit-animation: repeat-p1 1200ms linear 0s infinite;
+}
+
+/* line 371, ../sass/layer.scss */
+.pop2 {
+  -webkit-animation: repeat-p2 1200ms linear 0s infinite;
+}
+
+/* line 375, ../sass/layer.scss */
+.pop3 {
+  -webkit-animation: repeat-p2 2100ms linear 0s infinite;
+}
+
+/* line 379, ../sass/layer.scss */
+.pop4 {
+  -webkit-animation: repeat-p1 1800ms linear 0s infinite;
+}
+
+/* line 383, ../sass/layer.scss */
+#fly {
+  display: block;
+  text-align: right;
+  -webkit-animation: fly 30000ms linear 0s infinite;
+}
+
+/* line 389, ../sass/layer.scss */
+#fly > span {
+  width: 6px;
+  height: 20px;
+  background: url("../images/p11.png") center no-repeat;
+  float: right;
+  display: inline-block;
+  background-size: 100% 100%;
+  -webkit-animation: repeat-rotate 300ms linear 0s infinite;
+}
+
+/* line 399, ../sass/layer.scss */
+.repeat-move {
+  -webkit-animation: repeat-move 1800ms linear 0s infinite;
+}
+
+/* line 412, ../sass/layer.scss */
+.key-repeat {
+  -webkit-animation: key-repeat 800ms linear 0s infinite;
+}
+
+/* line 416, ../sass/layer.scss */
+.repeat-y {
+  -webkit-animation: repeat-y 1800ms linear 0s infinite;
+}
+
+/* line 420, ../sass/layer.scss */
+#page_1.dis {
+  -webkit-transform: scale(10);
+  opacity: 0;
+  -webkit-animation-duration: 1000ms;
+  -webkit-transition-duration: 1000ms;
+}
+
+/* line 427, ../sass/layer.scss */
+.expand {
+  padding: 10px;
+}
+
+/* line 431, ../sass/layer.scss */
+.repeat-new {
+  -webkit-animation: repeat-new 1200ms linear 0s infinite;
+}
+
+/* line 435, ../sass/layer.scss */
+#draw {
+  background: url("../images/canvas_bg.png");
+}
+
+/* line 439, ../sass/layer.scss */
+.round-move {
+  -webkit-animation: round-move 1200ms linear 0s infinite;
+}
+
+/* line 443, ../sass/layer.scss */
+.round-move2 {
+  -webkit-animation: round-move2 1200ms linear 0s infinite;
+}
+
+@-moz-keyframes floatLeft {
+  0% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -moz-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  75% {
+    -moz-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  100% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes floatLeft {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  75% {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes floatLeft {
+  0% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  75% {
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes floatRight {
+  0% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -moz-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  75% {
+    -moz-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  100% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes floatRight {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  75% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes floatRight {
+  0% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  75% {
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+/* line 478, ../sass/layer.scss */
+.page_1_floor,
+.tent {
+  -moz-animation: 12s floatLeft infinite linear;
+  -webkit-animation: 12s floatLeft infinite linear;
+  animation: 12s floatLeft infinite linear;
+}
+
+/* line 483, ../sass/layer.scss */
+.page_1_floor {
+  bottom: 0;
+  left: -581px;
+  width: 1803px;
+  height: 30%;
+}
+
+/* line 490, ../sass/layer.scss */
+.road-lamp {
+  -moz-animation: 8s floatLeft infinite linear;
+  -webkit-animation: 8s floatLeft infinite linear;
+  animation: 8s floatLeft infinite linear;
+}
+
+@-moz-keyframes floatCloud {
+  0% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+}
+@-webkit-keyframes floatCloud {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+}
+@keyframes floatCloud {
+  0% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+}
+/* line 504, ../sass/layer.scss */
+#cloud {
+  background: url("../images/cloud.png") left repeat;
+  background-size: auto 100%;
+  -moz-animation: 20s floatCloud infinite linear;
+  -webkit-animation: 20s floatCloud infinite linear;
+  animation: 20s floatCloud infinite linear;
+}
+
+/* line 510, ../sass/layer.scss */
+.ceil {
+  -moz-animation: 10s floatLeft infinite linear;
+  -webkit-animation: 10s floatLeft infinite linear;
+  animation: 10s floatLeft infinite linear;
+}
+
+/* line 514, ../sass/layer.scss */
+.floor {
+  -moz-animation: 6s floatLeft infinite linear;
+  -webkit-animation: 6s floatLeft infinite linear;
+  animation: 6s floatLeft infinite linear;
+}
+
+/* line 518, ../sass/layer.scss */
+.floor-left {
+  -moz-animation: 5s floatLeft infinite linear;
+  -webkit-animation: 5s floatLeft infinite linear;
+  animation: 5s floatLeft infinite linear;
+}
+
+/* line 522, ../sass/layer.scss */
+.floor-right {
+  -moz-animation: 5s floatRight infinite linear;
+  -webkit-animation: 5s floatRight infinite linear;
+  animation: 5s floatRight infinite linear;
+}
+
+/* line 527, ../sass/layer.scss */
+#page_4 .flag {
+  height: 100%;
+  width: 110px;
+  left: -50px;
+  bottom: 0;
+}
+
+/* line 536, ../sass/layer.scss */
+#page_6 .wc-icon {
+  background-image: url(../images/page_6_07.png);
+  background-size: 100% auto;
+}
+/* line 540, ../sass/layer.scss */
+#page_6 .wc-icon.next {
+  background-image: url(../images/page_6_07-2.png);
+}
+
+/* line 545, ../sass/layer.scss */
+.blink {
+  -moz-animation: 1s blink infinite linear;
+  -webkit-animation: 1s blink infinite linear;
+  animation: 1s blink infinite linear;
+}
+
+/* line 549, ../sass/layer.scss */
+.blink2 {
+  -moz-animation: blink 1s linear 0.5s infinite;
+  -webkit-animation: blink 1s linear 0.5s infinite;
+  animation: blink 1s linear 0.5s infinite;
+}
+
+/* line 553, ../sass/layer.scss */
+.hand {
+  -moz-animation: 1s hand infinite linear;
+  -webkit-animation: 1s hand infinite linear;
+  animation: 1s hand infinite linear;
+  opacity: 0;
+}
+
+/* line 558, ../sass/layer.scss */
+.clock {
+  position: absolute;
+  width: 60px;
+}
+/* line 561, ../sass/layer.scss */
+.clock .dial {
+  width: 100%;
+}
+/* line 564, ../sass/layer.scss */
+.clock .indicator {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 25px;
+}
+
+/* line 572, ../sass/layer.scss */
+.page1_gate {
+  -moz-transform-origin: 50% 80%;
+  -ms-transform-origin: 50% 80%;
+  -webkit-transform-origin: 50% 80%;
+  transform-origin: 50% 80%;
+}
+
+/* line 580, ../sass/layer.scss */
+.repeat-new {
+  margin: 10px 20px;
+}
+
+/* line 584, ../sass/layer.scss */
+.btn-light {
+  -moz-animation: 1s btnLight infinite linear;
+  -webkit-animation: 1s btnLight infinite linear;
+  animation: 1s btnLight infinite linear;
+}
+
+/* line 588, ../sass/layer.scss */
+#share {
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+/* line 595, ../sass/layer.scss */
+#share img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+/* line 602, ../sass/layer.scss */
+#share .sun2 {
+  -moz-animation: 1.5s movingSun infinite linear;
+  -webkit-animation: 1.5s movingSun infinite linear;
+  animation: 1.5s movingSun infinite linear;
+}
+
+/* line 607, ../sass/layer.scss */
+.click-cover {
+  z-index: 100;
+}
+
+/* line 611, ../sass/layer.scss */
+.music {
+  width: 200px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000000000;
+}
+
+.exp-content {
+  text-align: justify;
+  color: #333;
+  line-height: 16px;
+  text-indent: 17px;
+}
+.goods-three>div {
+   transform-style: preserve-3d;
+   transform: rotateY(48deg);
+}
+.goods-three img {
+  width: 100%;
+  height: 100%
+}
+.other-act {
+  padding: 0;
+}
+.other-act a>img {
+  width: 58px;
+  height: 87px;
+}
+.common-img div img {
+  width: 100%;
+  height: auto;
+}
+
+#frame div>img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 69px;
+}
+#frame div>p {
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-indent: 15px;
+}
+
+.layer > .container .common-img div {
+  vertical-align: middle;
+  overflow: hidden;
+}
+.layer > .container div.img01 div {
+  line-height: 158px;
+}
+.layer > .container div.img02 div {
+  line-height: 80px;
+}
+.layer > .container div.img03 div {
+  line-height: 152px;
+}
+.layer > .container div.img04 div {
+  line-height: 105px;
+}
+.layer > .container div.img05 div {
+  line-height: 200px;
+}
+.layer > .container div.img06 div {
+  line-height: 80px;
+}
+.layer > .container div.img07 div {
+  line-height: 80px;
+}
+.layer > .container div.img08 div {
+  line-height: 80px;
+}
+.layer > .container div.img09 div {
+  line-height: 80px;
+}
+.layer > .container .common-img img {
+  position: relative;
+  display: inline;
+  vertical-align: middle;
+}
