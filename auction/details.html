@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>查看详情</title>
+	<link rel="stylesheet" href="css/layer.css">
+</head>
+<body>
+	<div class="content">
+		<!-- 头部 -->
+		<header class="head-menu flexbox">
+			<div class="flex-1 active">
+				<a href="#">首页<br><span>Home Page</span></a>
+			</div>
+			<div class="flex-1">
+				<a href="#">个人中心<br><span>Personal Center</span></a>
+			</div>
+			<div class="flex-1">
+				<a href="#">富豪排名<br><span>Rich list</span></a>
+			</div>
+			<div class="flex-1">
+				<a href="#">即将拍卖<br><span>Upcoming auction</span></a>
+			</div>
+		</header>	
+
+		<!-- 商品详情 -->
+		<div class="details-content">
+			<!-- 商品图片 -->
+			<div class="img-cont">
+				<img src="images/details_img01.jpg" alt="商品详情">
+				<a class="back-btn" href="#"></a>
+			</div>
+
+			<!-- 商品名称 -->
+			<div class="flexbox title">
+				<h1 class="flex-1">
+					<span class="s1">作品名称:</span>
+					<span class="s2">《安静的室内》</span>
+				</h1>
+				<a class="icon-cont" href="#">
+					<div class="share-btn"></div>
+					<span>分享</span>
+				</a>
+			</div>
+
+			<!-- 商品简介 -->
+			<dl class="pub-details">
+				<dt>作者简介:</dt>
+				<dd>梵 高,中文又称“梵高”，是后印象主义的先驱，并深深地影响了二十世纪艺术，尤其是野兽派与表现主义。</dd>
+				<dt>作品简介:</dt>
+				<dd>清明上河图宽25.2厘米，长528.7厘米，绢本设色。</dd>
+			</dl>
+			<div class="pub-rect flexbox">
+				<div class="pub-name">正在拍卖:</div>
+				<div class="flex-1 auc-time">
+					距结束<span class="time-day">00</span>天<span class="time-hour">00</span>时<span class="time-minute">00</span>分<span class="time-second">00</span>秒
+				</div>
+			</div>
+			<div class="pub-rect flexbox">
+				<div class="pub-name">当前价格:</div>
+				<div class="flex-1 auc-price">
+					<span class="rmb">RMB</span>
+					<span id="now-price" class="now-price">100000</span>
+				</div>
+			</div>
+			<div class="pub-rect flexbox">
+				<div class="pub-name">加价价格:</div>
+				<div class="flex-1 add-price">
+					<div class="aducate clearfix">
+						<div id="del" class="ad-btn btn-del"></div>
+						<input id="num" class="num" type="text" value="1000" />
+						<div id="add" class="ad-btn btn-add"></div>
+					</div>
+					<span class="ele">元</span>
+				</div>
+			</div>
+			
+			<div class="flexbox people-num">
+				<div class="flex-1"></div>
+				<div class="p-num">
+					<div class="pe-icon"></div>
+					<p>参与人数：100000</p>
+				</div>
+			</div>
+			
+			<button class="btn bid-btn">提交竞价</button>
+		</div>
+	</div>  
+		
+</body>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/distanceTimeShow.js"></script>
+<script type="text/javascript">
+
+	Zepto(function(){
+
+		menuClick();
+		aucAducate();
+
+	});
+
+	// 头部菜单点击效果
+	function menuClick() {
+
+		$(".head-menu div.flex-1").on('tap', function(){
+
+			$(this).addClass('active').siblings().removeClass('active');
+
+		});
+
+	}
+
+	// 竞拍价钱
+	function aucAducate() {
+
+
+
+		$("#add").on('tap',function(){
+
+			var aucPrice = parseInt($("#num").val());
+			$("#num").val(aucPrice+1);
+
+		});
+
+
+		$("#del").on('tap',function(){
+
+			var aucPrice = parseInt($("#num").val());
+			if (aucPrice <= 1) { 
+				$("#num").val(1);
+				return;
+			}
+			$("#num").val(aucPrice-1);
+
+		});
+
+		$("#num").on('input',function(e){  
+
+		  var aucPrice = parseInt($("#num").val());
+			if (aucPrice <= 1) { 
+				$(this).val(1);
+			}
+
+		});  
+
+		
+
+	}
+
+</script>
+
+</html>

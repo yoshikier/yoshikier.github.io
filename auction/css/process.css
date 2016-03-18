@@ -1,0 +1,106 @@
+body {
+  background-color: #000;
+  font-family: "黑体";
+}
+path, line, polyline {
+  stroke: #fff;
+  stroke-width: 3px;
+}
+
+path {
+  fill: transparent;
+}
+svg {
+  display: block;
+  margin: 0 auto;
+  font-weight: 900;
+}
+.process-content {
+  position: relative;
+  padding: 100px 0;
+  height: 4200px;
+  overflow: hidden;
+}
+.process-content .p-num {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid 3px #fff;
+  background-color: #000;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 60px;
+}
+.process-content .p-num-1 {
+  left: 110px;
+}
+.process-content .p-num-2 {
+  left: auto;
+  right: 111px;
+  top: 1073px;
+}
+.process-content .p-num-3 {
+  top: 2061px;
+  left: 113px;
+}
+.process-content .p-num-4 {
+  left: auto;
+  top: 3094px;
+  right: 110px;
+}
+
+.process-content .tiper {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  color: #fff;
+  -webkit-transition:all 1s ;
+}
+.process-content .tiper h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+.process-content .tiper p {
+  font-size: 28px;
+  line-height: 43px;
+  padding: 0;
+  margin: 0;
+}
+.process-content .tiper1 {
+  left: 186px;
+  top: 135px;
+}
+.process-content .tiper2 {
+  width: 345px;
+  left: 285px;
+  top: 750px;
+}
+.process-content .tiper3 {
+  top: 1700px;
+  left: 200px;
+}
+.process-content .tiper4 {
+  top: 3259px;
+  left: 230px;
+}
+.process-content .next-btn {
+  display: block;
+  position: absolute;
+  left: 35%;
+  bottom: 50px;
+  text-align: center;
+  color: #fff;
+  border: solid 3px #fff;
+  background-color: #000;
+  padding: 20px 80px;
+  border-radius: 10px;
+  font-size: 40px;
+  text-decoration: none;
+  -webkit-transition:all 1s ;
+}

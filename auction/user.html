@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" href="css/layer.css">
+</head>
+<body>
+	<div class="content">
+		<!-- 头部 -->
+		<header class="head-menu flexbox">
+			<div class="flex-1">
+				<a href="#">首页<br><span>Home Page</span></a>
+			</div>
+			<div class="flex-1 active">
+				<a href="#">个人中心<br><span>Personal Center</span></a>
+			</div>
+			<div class="flex-1">
+				<a href="#">富豪排名<br><span>Rich list</span></a>
+			</div>
+			<div class="flex-1">
+				<a href="#">即将拍卖<br><span>Upcoming auction</span></a>
+			</div>
+		</header>	
+		
+		<!-- 头像区 -->
+		<div class="head-content">
+			<h1 class="uname">艾米丽</h1>
+			<div class="port-cont">
+				<div class="portrait">
+					<img src="images/head01.jpg">
+				</div>
+			</div>
+			<div class="head-bg" style="background: url(images/head01.jpg) no-repeat; background-size: 90%; background-position: top;"></div>
+			<div class="bot-bg"></div>
+		</div>
+
+		<!-- 个人信息 -->
+		<div class="user-content">
+			<div class="u-cont">
+				<!-- 个人信息详情 -->
+				<div class="unit user-message">
+					<div class="um-content">
+						<form action="#" method="post">
+							<div class="um-box">
+								<label for="name">真实姓名</label>
+								<input type="text" name="name" value="" tabindex="1" placeholder="输入姓名" />
+							</div>
+							<div class="um-box">
+								<label for="name">手机号</label>
+								<input type="text" name="name" value="13888888888" tabindex="1" />
+							</div>
+							<div class="um-box">
+								<label for="name">职业</label>
+								<input type="text" name="name" value="足球运动员" tabindex="1" />
+							</div>
+							<div class="um-box">
+								<label for="name">地址</label>
+								<input type="text" name="name" value="" tabindex="1" placeholder="输入地址" />
+							</div>
+							<div class="um-box clearfix um-check">
+								<label for="name">已入驻51空中艺术馆</label>
+								<input class="mt iconfont" type="checkbox" />
+							</div>
+							<div class="um-box btn-group">
+								<a class="stn edit-btn" href="javascript:;">保存</a>
+								<a class="stn save-btn" href="javascript:;">编辑</a>
+							</div>
+						</form>
+					</div>
+					<div class="bar"></div>
+				</div>
+
+				<!-- 拍卖信息详情 -->
+				<div class="unit auc-message">
+					<div class="am-content">
+						<div class="am-box flexbox">
+							<div class="flex-1 title">成交次数</div>
+							<div class="flex-1 cripe">1次</div>
+						</div>
+						<div class="am-box flexbox">
+							<div class="flex-1 title">成交金额</div>
+							<div class="flex-1 cripe">500000元</div>
+						</div>
+						<div class="am-box flexbox">
+							<div class="flex-1 title">成交类型-时间</div>
+							<div class="flex-1 cripe">素描类型</div>
+						</div>
+						<div class="am-box flexbox margin-zero">
+							<div class="flex-1 title"></div>
+							<div class="flex-1 cripe">2016年08月20日</div>
+						</div>
+						<div class="am-box flexbox">
+							<div class="flex-1 title">竞价次数</div>
+							<div class="flex-1 cripe">5次</div>
+						</div>
+						<div class="am-box flexbox">
+							<div class="flex-1 title">已购画作名称-时间</div>
+							<div class="flex-1 cripe">《安静的室内》</div>
+						</div>
+						<div class="am-box flexbox margin-zero">
+							<div class="flex-1 title"></div>
+							<div class="flex-1 cripe">2016年8月20日</div>
+						</div>
+						<div class="am-box flexbox">
+							<div class="flex-1 title">总价值</div>
+							<div class="flex-1 cripe">500000</div>
+						</div>
+
+					</div>
+					<div class="auc-bar"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+	<script type="text/javascript" src="js/user.js"></script>
+
+</html>
